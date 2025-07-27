@@ -13,8 +13,7 @@ struct AddActivityView: View {
         NavigationStack {
             Form {
                 TextField("Title", text: $title)
-                TextEditor(text: $description)
-                    .frame(height: 150)
+                TextField("Description", text: $description, axis: .vertical)
             }
             .scrollContentBackground(.hidden)
             .background(.darkBackground)
